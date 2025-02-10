@@ -1,4 +1,4 @@
-# LNs-t-test
+# LN's $t$-test
 Code to reproduce results in the LN's t-test paper (currently under review). This is "research code", i.e. it's not a slick, well-oiled package (yet!), but the code indeed reproduces the results in our submission.
 
 The code to run LN's t-test is found in utils.py and the function called get_LN_lfcs. The function takes two raw expression (n_cells x n_genes)-matrices, Y and X, and performs a DGE test comparing the two conditions. CP10K normalization was used to get all results in the submission but median-of-ratios is also implemented (following implementation instructions in the DESEQ-2 paper). If return_standard_error is set to True, \hat{gamma} is returned, too.
